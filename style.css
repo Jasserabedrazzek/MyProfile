@@ -1,0 +1,144 @@
+* {
+    margin: 0;
+    padding: 0;
+    color: white;
+}
+body {
+    display: flex;
+    flex: 2;
+    background-position: center;
+    background: #1c132e;
+}
+.logo {
+    margin: 25px 25px;
+    display: flex;
+    flex: 2;
+    text-align: center;
+    cursor: pointer;
+    animation: up 2s linear 2;
+}
+
+#DevWeb {
+    margin: 25px 25px;
+    font-size: 25px;
+}
+.iLogo {
+    border-radius: 15px;
+}
+.profile {
+    margin: 25px;
+    top : 50%;
+    transform: translateY(-50%);
+    position: absolute;
+}
+
+.contraire {
+    margin: 0;
+    padding: 0;
+    max-width: 96%;
+    height: 100%;
+    display: inline-block;
+    
+}
+.intr {
+    border: 2px solid aqua;
+    border-radius: 10px;
+    width: 176px;
+}
+#name {
+    font-family: monospace;
+}
+#job {
+    background: linear-gradient(45deg, #e100ff, #00ffea, #0000ff);
+    background-clip: text;
+    -webkit-background-clip: text;
+    font-family:  monospace;
+    color: transparent;
+}
+#dev {
+    font-family: monospace;
+}
+#downloadCv {
+    width: 60%;
+    height: 50px;
+    border-radius: 20px;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    background: linear-gradient(180deg, blue,white);
+    font-size: 17px;
+    font-family: monospace;
+    font-weight: 600;
+    display: none;
+}
+.JassLogo{
+    top: 50%;
+    left: 80%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    
+}
+.img{
+    width: 250px;
+    border-radius: 50%;
+}
+@media (max-width: 767px) {
+    .profile {
+        top: 85%;
+        margin: 27px 70px;
+    }
+    .logo {
+        left: 60%;
+        transform: translateX(-50%);
+        position: relative;
+    }
+    
+    .JassLogo{
+        top: 40%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+
+        
+    }
+}
+@media (max-width: 500px) {
+    .profile {
+        top: 70%;
+        margin: 27px 70px;
+    }
+    .logo {
+        left: 60%;
+        transform: translateX(-50%);
+        position: relative;
+    }
+    
+    .JassLogo{
+        top: 35%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+
+        
+    }
+}
+@media (max-width: 330px) {
+    .profile {
+        top: 80%;
+        margin: 27px 70px;
+    }
+    .logo {
+        left: 50%;
+        transform: translateX(-50%);
+        position: relative;
+    }
+    .img {
+        width: 150px;
+    }
+    
+    .JassLogo{
+        top: 40%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+
+        
+    }
+}
