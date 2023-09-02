@@ -177,6 +177,7 @@ body {
 }
 @media (max-width:185px) {
     .watch {
+        color: white;
         display: block;
     }
     .contraire {
