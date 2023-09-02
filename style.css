@@ -179,4 +179,7 @@ body {
     .watch {
         display: block;
     }
+    .contraire {
+        display: none;
+    }
 }
