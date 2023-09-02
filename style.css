@@ -183,7 +183,7 @@ body {
         top: 85%;
     }
 }
-@media (max-width:185px) {
+@media (max-width:270px) {
     .watch {
         color: white;
         display: block;
