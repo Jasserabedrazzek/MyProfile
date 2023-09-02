@@ -1,34 +1,30 @@
-const download = document.getElementById('downloadCv');
-const web = document.getElementById('DevWeb');
-const contraireDiv = document.querySelector('.contraire');
+const face = document.getElementById('fa');
+const inst = document.getElementById('ins');
+const tik = document.getElementById('tik');
+const dis = document.getElementById('dis');
+const dev = document.getElementById('dev');
 
-web.addEventListener('click', () => {
-    window.location.href = 'https://devtunisian.netlify.app/';
-});
+const filename = 'dev-social.json';
 
-var url = new URL(window.location.href);
-var dValue = url.searchParams.get('d');
-
-if (dValue !== null && dValue === 't') {
-    // Use HTML2Canvas to capture the content of the "contraire" div
-    html2canvas(contraireDiv).then((canvas) => {
-        // Create a data URL for the captured image
-        const imgDataUrl = canvas.toDataURL('image/png');
-
-        // Create an anchor element to trigger the download
-        const downloadLink = document.createElement('a');
-        downloadLink.href = imgDataUrl;
-        downloadLink.download = 'contraire_image.png'; // Set the desired download filename
-
-        // Append the anchor element to the document
-        document.body.appendChild(downloadLink);
-
-        // Trigger a click event on the anchor element to initiate the download
-        downloadLink.click();
-
-        // Remove the anchor element from the document
-        document.body.removeChild(downloadLink);
+fetch(filename)
+.then(res => res.json())
+.then(data => {
+    inst.addEventListener('click', () => {
+        window.location.href = data.instagram;
     });
-} else {
-    download.style.display = 'none';
-}
+    face.addEventListener('click', () => {
+        window.location.href = data.facebook;
+    });
+    dis.addEventListener('click', () => {
+        window.location.href = data.discord;
+    });
+    tik.addEventListener('click', () => {
+        window.location.href = data.tiktok;
+    });
+    dev.addEventListener('click', () => {
+        window.location.href = data.DevTunisian;
+    });
+})
+.catch(error => {
+    alert('error: '+ error)
+});

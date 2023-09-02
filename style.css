@@ -1,144 +1,133 @@
 * {
     margin: 0;
     padding: 0;
-    color: white;
-}
-body {
-    display: flex;
-    flex: 2;
-    background-position: center;
-    background: #1c132e;
-}
-.logo {
-    margin: 25px 25px;
-    display: flex;
-    flex: 2;
-    text-align: center;
-    cursor: pointer;
-    animation: up 2s linear 2;
-}
-
-#DevWeb {
-    margin: 25px 25px;
-    font-size: 25px;
-}
-.iLogo {
-    border-radius: 15px;
-}
-.profile {
-    margin: 25px;
-    top : 50%;
-    transform: translateY(-50%);
-    position: absolute;
-}
-
-.contraire {
-    margin: 0;
-    padding: 0;
-    max-width: 96%;
-    height: 100%;
-    display: inline-block;
+    font-family: monospace;
+    font-weight: 600;
     
 }
-.intr {
-    border: 2px solid aqua;
+body {
+    background: #08070d ;
+}
+#circle1{
+    width: 120px;
+    height: 120px;
+    background-color: #ac20f2;
+    border-radius: 50%;
+    margin: 50px 120px;
+}
+#circle2{
+    width: 120px;
+    height: 120px;
+    background: linear-gradient(120deg,#bd4524,#df871b);
+    border-radius: 50%;
+    top: 80%;
+    right: 7%;
+    position: fixed;
+    transform: translate(-50%, -50%);
+
+}
+.contraire {
+    top: 50%;
+    left: 50%;
+    transform:translate(-50% , -50%);
+    position: fixed;
+    height: 100%;
+    width: 70%;
+    display: flex;
+    flex: 2;
+}
+.ProfileBox{
+    top: 50%;
+    left: 50%;
+    position: fixed;
+    transform: translate(-50%, -50%);
+    width: 60%;
+    height: 75%;
     border-radius: 10px;
-    width: 176px;
+    background-color: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    color: white;
+    text-align: center;
+    box-shadow: 0 0 25px #ffffff;
+}
+.img {
+    top:5%;
+    left: 50%;
+    position: fixed;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+}
+
+.name {
+    top: 15%;
+    left: 50%;
+    transform: translate(-50%,50%);
+    position: fixed;
+    width: 100%;
 }
 #name {
-    font-family: monospace;
-}
-#job {
     background: linear-gradient(45deg, #e100ff, #00ffea, #0000ff);
     background-clip: text;
     -webkit-background-clip: text;
     font-family:  monospace;
     color: transparent;
 }
-#dev {
-    font-family: monospace;
+ hr {
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, -50%) ;
+    position: fixed;
+    width: 95%;
+    
 }
-#downloadCv {
-    width: 60%;
-    height: 50px;
-    border-radius: 20px;
-    border: none;
+.social-media {
+    top: 90%;
+    left: 50%;
+    transform: translate(-50%, -50%) ;
+    position: fixed;
+    width: 95%;
+    display: flex;
+    flex: 2;
+    text-align: center;
+    justify-content: space-between;
     cursor: pointer;
-    outline: none;
-    background: linear-gradient(180deg, blue,white);
-    font-size: 17px;
-    font-family: monospace;
-    font-weight: 600;
-    display: none;
 }
-.JassLogo{
-    top: 50%;
-    left: 80%;
-    transform: translate(-50%, -50%);
-    position: absolute;
-    
+#fa:hover {
+    transform: scale(1.25);
 }
-.img{
-    width: 250px;
-    border-radius: 50%;
+#ins:hover {
+    transform: scale(1.25);
 }
-@media (max-width: 767px) {
-    .profile {
-        top: 85%;
-        margin: 27px 70px;
-    }
-    .logo {
-        left: 60%;
-        transform: translateX(-50%);
-        position: relative;
-    }
-    
-    .JassLogo{
-        top: 40%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-
-        
-    }
+#tik:hover {
+    transform: scale(1.25);
 }
-@media (max-width: 500px) {
-    .profile {
-        top: 70%;
-        margin: 27px 70px;
-    }
-    .logo {
-        left: 60%;
-        transform: translateX(-50%);
-        position: relative;
-    }
-    
-    .JassLogo{
-        top: 35%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-
-        
-    }
+#dis:hover {
+    transform: scale(1.25);
 }
-@media (max-width: 330px) {
-    .profile {
-        top: 80%;
-        margin: 27px 70px;
-    }
-    .logo {
-        left: 50%;
-        transform: translateX(-50%);
-        position: relative;
+#dev:hover {
+    transform: scale(1.25);
+}
+.img2 {
+    border-radius: 15px;
+}
+@media (max-width:765px) {
+    .ProfileBox {
+        width: 80%;
     }
     .img {
-        width: 150px;
+        top: 0%;
     }
-    
-    .JassLogo{
-        top: 40%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-
-        
+    .contraire {
+        width: 100%;
+    }
+    .name{
+        top: 5%;
+    }
+    #circle1 {
+        margin: 50px 0;
+    }
+    #circle2 {
+        right: -10%;
+        top: 85%;
     }
 }
