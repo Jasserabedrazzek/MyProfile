@@ -175,8 +175,8 @@ body {
         top: 85%;
     }
 }
-@media (max-width:170px) {
-    * {
-        display: none;
+@media (max-width:185px) {
+    .watch {
+        display: block;
     }
 }
