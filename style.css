@@ -158,7 +158,8 @@ body {
         height: 100%;
     }
     .img {
-        top: 15%;
+        top: 10%;
+        width: 100px;
     }
     .contraire {
         width: 100%;
