@@ -131,3 +131,24 @@ body {
         top: 85%;
     }
 }
+@media (max-width:900px) {
+    .ProfileBox {
+        width: 80%;
+    }
+    .img {
+        top: 0%;
+    }
+    .contraire {
+        width: 100%;
+    }
+    .name{
+        top: 5%;
+    }
+    #circle1 {
+        margin: 50px 0;
+    }
+    #circle2 {
+        right: -10%;
+        top: 85%;
+    }
+}
